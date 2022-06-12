@@ -18,9 +18,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "preserve",
+    "incremental": true
   },
   "include": [
-    "src"
+    "pages/index.tsx", "pages/types", "pages/posts", "pages/post"  ],
+  "exclude": [
+    "node_modules"
   ]
 }

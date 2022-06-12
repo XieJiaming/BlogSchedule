@@ -1,7 +1,5 @@
-import PostList from '../Posts/PostList'
-
 export default function HomePage(): JSX.Element {
   return (
-    <PostList />
+    <h2>Home</h2>
   )
 }

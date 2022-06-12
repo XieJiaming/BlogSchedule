@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react'
 import axios from 'axios';
 import Post from './post'
 import PostForm from './PostForm'
-import { IPost } from '../types/data'
+import IPost from '../../types/data'
 
-export default function PostList() {
+export default function Posts() {
   const [posts, setPosts] = useState<IPost[]>([])
   const [isUpdate, setUpdate] = useState<boolean>(false)
 
@@ -42,6 +42,7 @@ export default function PostList() {
       {posts.map((post: IPost) => (
         <Post
           key={post.id}
+          id={post.id}
           title={post.title}
           content={post.content}
         />
